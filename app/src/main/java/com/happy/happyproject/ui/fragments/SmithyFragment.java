@@ -2,6 +2,9 @@ package com.happy.happyproject.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -10,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.happy.happyproject.R;
+import com.happy.happyproject.adapter.SmithyViewPagerAdapter;
 import com.happy.happyproject.adapters.SmithyRecyclerAdapter;
 import com.happy.happyproject.http.SmithyNavigationRequest;
 import com.happy.happyproject.http.SmithyTopRequest;
@@ -36,6 +40,9 @@ public class SmithyFragment extends BaseFragment {
     private List<String> images;
     private RecyclerView mRecyclerView;
     private SmithyRecyclerAdapter mAdapter;
+    private TabLayout mTabLayout;
+    private ViewPager mViewPager;
+    private List<Fragment> mFragmentList;
 
     @Nullable
     @Override
@@ -54,17 +61,40 @@ public class SmithyFragment extends BaseFragment {
 
 
     private void initView() {
+        initBanner();
+
+        initRecyclerView();
+
+        initViewPager();
+
+
+
+    }
+
+    private void initBanner() {
         images = new ArrayList<>();
         mBanner = ((Banner) layout.findViewById(R.id.smithy_fragment_banner));
         mBanner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
         mBanner.setIndicatorGravity(BannerConfig.CENTER);
         mBanner.setDelayTime(BANNER_DELAY_TIEM);
+    }
 
+    private void initRecyclerView() {
         mRecyclerView = ((RecyclerView) layout.findViewById(R.id.smithy_fragment_recycler));
         GridLayoutManager layoutManager = new GridLayoutManager(getContext(), 4);
         mRecyclerView.setLayoutManager(layoutManager);
         mAdapter = new SmithyRecyclerAdapter(getContext(),null);
         mRecyclerView.setAdapter(mAdapter);
+    }
+
+    private void initViewPager() {
+        mTabLayout = ((TabLayout) layout.findViewById(R.id.smithy_tablayout));
+        mViewPager = ((ViewPager) layout.findViewById(R.id.smithy_viewpager));
+        mFragmentList = new ArrayList<>();
+        mFragmentList.add(new SmithyDesignFragment());
+        mFragmentList.add(new SmithySelectorFragment());
+        mViewPager.setAdapter(new SmithyViewPagerAdapter(getChildFragmentManager(),mFragmentList));
+        mTabLayout.setupWithViewPager(mViewPager);
     }
 
 

@@ -35,6 +35,8 @@
     <dimen name="smithy_item_width">100dp</dimen>
     <dimen name="smithy_item_height">40dp</dimen>
     <dimen name="item_title_width">30dp</dimen>
+    <dimen name="top_height">350dp</dimen>
+    <dimen name="tablayout_height">50dp</dimen>
 
 
 </resources>
