@@ -32,7 +32,7 @@
 
     <style name="MineLinearLayoutTop">
         <item name="android:layout_width">@dimen/mine_linear_top_width</item>
-        <item name="android:layout_weight">@dimen/mine_linear_top_weight</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">center</item>

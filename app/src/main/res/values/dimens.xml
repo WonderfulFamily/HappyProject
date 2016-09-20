@@ -11,7 +11,6 @@
     <dimen name="mine_tv_name_margintop">5dp</dimen>
     <dimen name="mine_tv_name_textSize">9sp</dimen>
     <dimen name="mine_linear_top_width">0dp</dimen>
-    <dimen name="mine_linear_top_weight">1</dimen>
     <dimen name="mine_linear_goods_heigth">50dp</dimen>
     <dimen name="mine_view_height">1dp</dimen>
     <dimen name="mine_view_marginLeft">50dp</dimen>
