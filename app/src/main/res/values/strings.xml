@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">HappyProject</string>
+    <string name="mine_unlogin">未登录</string>
+    <string name="mine_text_num">0</string>
+    <string name="mine_text_unpay">待付款</string>
+    <string name="mine_text_recever">待收货</string>
+    <string name="mine_text_complete">已完成</string>
+    <string name="mine_text_all_orders">商品订单</string>
+    <string name="mine_text_message">我的消息</string>
+    <string name="mine_text_address">收货地址</string>
+    <string name="text_coupons">优惠券</string>
+    <string name="mine_text_order">空间订单</string>
+    <string name="mine_text_space_like">喜欢的空间</string>
+    <string name="mine_text_products_liked">喜欢的商品</string>
+    <string name="mine_text_customer_service">联系客服</string>
+    <string name="mine_text_designers_in">设计师注入</string>
 </resources>

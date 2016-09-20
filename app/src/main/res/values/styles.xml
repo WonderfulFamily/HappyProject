@@ -16,4 +16,67 @@
         <item name="android:textColor">@drawable/controller_text_color</item>
 
     </style>
+
+    <!-- 我的 -->
+    <style name="MineTVMenuNum">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/mine_tv_menu_textSize</item>
+    </style>
+
+    <style name="MineTVMenuName" parent="MineTVMenuNum">
+        <item name="android:layout_marginTop">@dimen/mine_tv_name_margintop</item>
+        <item name="android:textSize">@dimen/mine_tv_name_textSize</item>
+    </style>
+
+    <style name="MineLinearLayoutTop">
+        <item name="android:layout_width">@dimen/mine_linear_top_width</item>
+        <item name="android:layout_weight">@dimen/mine_linear_top_weight</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MineLinearLayoutGoods">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_linear_goods_heigth</item>
+
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MineView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_view_height</item>
+        <item name="android:layout_marginLeft">@dimen/mine_view_marginLeft</item>
+        <item name="android:background">#aaaa</item>
+    </style>
+
+    <style name="MineImage">
+        <item name="android:layout_width">@dimen/mine_image_long</item>
+        <item name="android:layout_height">@dimen/mine_image_long</item>
+    </style>
+
+    <style name="MineTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/mine_textView_marginLeft</item>
+        <item name="android:textSize">@dimen/mine_textView_textSize</item>
+    </style>
+
+    <style name="MineBigView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_big_view_height</item>
+        <item name="android:background">#aaaa</item>
+    </style>
+
+    <style name="MineLinearLayoutMiddle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_linear_middle_height</item>
+        <item name="android:layout_marginLeft">@dimen/mine_linear_middle_marginLeft</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
 </resources>
