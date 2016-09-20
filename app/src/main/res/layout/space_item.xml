@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="280dp">
+    <ImageView
+        android:id="@+id/space_recyclerview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+            android:id="@+id/space_recyclerview_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginTop="130dp"
+        android:text="你好"/>
+    <ImageView
+        android:id="@+id/space_recyclerview_heart"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="310dp"
+        android:src="@mipmap/btn_product_like_selected"/>
+    <TextView
+        android:id="@+id/space_recyclerview_heart_num"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="340dp"
+        android:text="12"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+</android.support.v7.widget.CardView>
