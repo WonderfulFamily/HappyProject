@@ -9,6 +9,5 @@ import org.xutils.http.annotation.HttpRequest;
  */
 @HttpRequest(host = "http://api.jiangwoo.com",path = "api/v1/headlines")
 public class SmithyTopRequest extends RequestParams{
-
     public String page;
 }

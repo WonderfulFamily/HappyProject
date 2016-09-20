@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class SmithyFragment extends BaseFragment {
     public static final String TAG = SmithyFragment.class.getSimpleName();
-    private static final int BANNER_DELAY_TIEM = 2 * 1000;
+    private static final int BANNER_DELAY_TIEM = 3 * 1000;
     private Banner mBanner;
     private List<String> images;
 
@@ -57,19 +57,21 @@ public class SmithyFragment extends BaseFragment {
     private void setupView() {
         SmithyTopRequest request = new SmithyTopRequest();
         request.page="1";
-        x.http().post(request, new Callback.CommonCallback<SmithyTopViewList>() {
+        x.http().get(request, new Callback.CommonCallback<SmithyTopViewList>() {
             @Override
             public void onSuccess(SmithyTopViewList result) {
                 Log.e(TAG, "onSuccess: " );
+
                 for (SmithyTopView smithy : result.getHeadlines()) {
                     images.add(smithy.getUrl());
+                    Log.e(TAG, "onSuccess: "+smithy.getThumb() );
                 }
                 mBanner.setImages(images);
             }
 
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
-                Log.e(TAG, "onError: " );
+                Log.e(TAG, "onError: "+ ex.getMessage());
             }
 
             @Override
