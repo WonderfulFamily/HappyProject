@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@mipmap/bg_fragment_product" >
+              android:background="@mipmap/bg_fragment_product">
 
-    <android.support.v4.view.ViewPager
+    <com.qf.bannder.Banner
+        android:id="@+id/smithy_fragment_banner"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/view_pager_height"/>
-    
+        android:layout_height="@dimen/top_scroll_height"
+        app:indicator_height="5dp"
+        app:indicator_width="5dp"
+        app:indicator_drawable_selected="@mipmap/dot_selected"
+        app:indicator_drawable_unselected="@mipmap/dot_unselected"/>
+
 </LinearLayout>

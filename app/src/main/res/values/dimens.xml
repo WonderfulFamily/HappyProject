@@ -3,30 +3,5 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="view_pager_height">260dp</dimen>
-
-
-
-
-    <dimen name="mine_tv_menu_textSize">16sp</dimen>
-    <dimen name="mine_tv_name_margintop">5dp</dimen>
-    <dimen name="mine_tv_name_textSize">9sp</dimen>
-    <dimen name="mine_linear_top_width">0dp</dimen>
-    <dimen name="mine_linear_goods_heigth">50dp</dimen>
-    <dimen name="mine_view_height">1dp</dimen>
-    <dimen name="mine_view_marginLeft">50dp</dimen>
-    <dimen name="mine_image_long">40dp</dimen>
-    <dimen name="mine_textView_marginLeft">10dp</dimen>
-    <dimen name="mine_textView_textSize">13sp</dimen>
-    <dimen name="mine_big_view_height">20dp</dimen>
-    <dimen name="mine_linear_height">180dp</dimen>
-    <dimen name="mine_image_top_long">50dp</dimen>
-    <dimen name="mine_image_top_marginTop">25dp</dimen>
-    <dimen name="mine_tv_marginTop">5dp</dimen>
-    <dimen name="mine_tv_textSize">16sp</dimen>
-    <dimen name="mine_linear_middle_height">101dp</dimen>
-    <dimen name="mine_linear_middle_marginLeft">10dp</dimen>
-    <dimen name="mine_linear_marginTop">22dp</dimen>
-    <dimen name="mine_linearLayout_height">50dp</dimen>
-    <dimen name="mine_linear_mid_height">203dp</dimen>
-    <dimen name="mine_linear_mid_marginLeft">10dp</dimen>
+    <dimen name="top_scroll_height">260dp</dimen>
 </resources>
