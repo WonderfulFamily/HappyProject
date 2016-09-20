@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.happy.happyproject.R;
 import com.happy.happyproject.model.Space;
 
+import org.xutils.image.ImageOptions;
 import org.xutils.x;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class SpaceAdapter extends RecyclerView.Adapter<SpaceAdapter.ViewHolder> 
     private LayoutInflater inflater;
     private RecyclerView mRecyclerView;
     private OnItemClickListener listener;
-
+    private ImageOptions options;
     public void setListener(OnItemClickListener listener) {
         this.listener = listener;
     }
@@ -39,6 +40,16 @@ public class SpaceAdapter extends RecyclerView.Adapter<SpaceAdapter.ViewHolder> 
         }else {
             this.data=new ArrayList<>();
         }
+        options = new ImageOptions.Builder()
+
+                .setFadeIn(true)
+                //设置正方形
+                .setSquare(true)
+                //设置加载时的图片
+                .setLoadingDrawableId(R.mipmap.ic_launcher)
+                //设置加载是被是的图片
+                .setFailureDrawableId(R.mipmap.ic_launcher)
+                .build();
     }
 //刷新适配器
     public void updataRes(List<Space> data){
@@ -68,7 +79,7 @@ public class SpaceAdapter extends RecyclerView.Adapter<SpaceAdapter.ViewHolder> 
         //加载数据
         holder.name.setText(data.get(position).getName());
         holder.num.setText(data.get(position).getFavs_count());
-        x.image().bind(holder.image,data.get(position).getThumb());
+        x.image().bind(holder.image,"http://"+data.get(position).getThumb());
     }
 
     @Override

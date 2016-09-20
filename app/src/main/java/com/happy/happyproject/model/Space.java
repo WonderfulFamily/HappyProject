@@ -7,7 +7,7 @@ public class Space {
     private int id;
     private String name;
     private String thumb;
-    private int favs_count;
+    private String  favs_count;
     private int comments_count;
     private int position;
     private int shares_count;
@@ -36,11 +36,11 @@ public class Space {
         this.thumb = thumb;
     }
 
-    public int getFavs_count() {
+    public String getFavs_count() {
         return favs_count;
     }
 
-    public void setFavs_count(int favs_count) {
+    public void setFavs_count(String favs_count) {
         this.favs_count = favs_count;
     }
 

@@ -6,7 +6,6 @@
     <dimen name="top_scroll_height">200dp</dimen>
 
 
-
     <dimen name="mine_tv_menu_textSize">16sp</dimen>
     <dimen name="mine_tv_name_margintop">5dp</dimen>
     <dimen name="mine_tv_name_textSize">9sp</dimen>
