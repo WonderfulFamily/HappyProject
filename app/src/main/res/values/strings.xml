@@ -14,4 +14,7 @@
     <string name="mine_text_products_liked">喜欢的商品</string>
     <string name="mine_text_customer_service">联系客服</string>
     <string name="mine_text_designers_in">设计师注入</string>
+    <string name="service_online">在线客服</string>
+    <string name="service_tele">客服电话</string>
+    <string name="service_time">工作时间： 周一到周五 10:00--18:00</string>
 </resources>

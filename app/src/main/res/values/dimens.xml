@@ -3,6 +3,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="view_pager_height">260dp</dimen>
+
+
     <dimen name="top_scroll_height">200dp</dimen>
 
 

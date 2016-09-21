@@ -153,6 +153,7 @@
             <View
                 style="@style/MineView"/>
             <LinearLayout
+                android:id="@+id/mine_service"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -171,6 +172,7 @@
             android:layout_marginLeft="10dp"
             android:orientation="vertical">
             <LinearLayout
+                android:id="@+id/mine_designers_in"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
