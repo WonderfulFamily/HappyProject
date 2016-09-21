@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#000"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/currency_bar_left_cart_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_shopping_cart"
+            />
+
+        <TextView
+            android:id="@+id/currency_bar_middle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="我的"
+            />
+        <ImageView
+            android:id="@+id/currency_bar_right_setting_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_setting"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -14,6 +56,7 @@
             android:orientation="vertical"
             android:gravity="center_horizontal">
             <ImageView
+                android:id="@+id/mine_logo_image"
                 android:layout_marginTop="@dimen/mine_image_top_marginTop"
                 android:layout_width="@dimen/mine_image_top_long"
                 android:layout_height="@dimen/mine_image_top_long"
@@ -68,6 +111,7 @@
             android:layout_marginLeft="@dimen/mine_linear_mid_marginLeft"
             android:orientation="vertical">
             <LinearLayout
+                android:id="@+id/mine_orders"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -79,6 +123,7 @@
             <View
                 style="@style/MineView"/>
             <LinearLayout
+                android:id="@+id/mine_message"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -128,6 +173,7 @@
             <View
                 style="@style/MineView"/>
             <LinearLayout
+                android:id="@+id/mine_space_like"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -142,6 +188,7 @@
         <LinearLayout
             style="@style/MineLinearLayoutMiddle">
             <LinearLayout
+                android:id="@+id/mine_products_liked"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -186,4 +233,5 @@
         <View
             style="@style/MineBigView"/>
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</LinearLayout>
