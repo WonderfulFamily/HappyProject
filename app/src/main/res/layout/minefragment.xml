@@ -68,6 +68,7 @@
             android:layout_marginLeft="@dimen/mine_linear_mid_marginLeft"
             android:orientation="vertical">
             <LinearLayout
+                android:id="@+id/mine_orders"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -79,6 +80,7 @@
             <View
                 style="@style/MineView"/>
             <LinearLayout
+                android:id="@+id/mine_message"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -128,6 +130,7 @@
             <View
                 style="@style/MineView"/>
             <LinearLayout
+                android:id="@+id/mine_space_like"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
@@ -142,6 +145,7 @@
         <LinearLayout
             style="@style/MineLinearLayoutMiddle">
             <LinearLayout
+                android:id="@+id/mine_products_liked"
                 style="@style/MineLinearLayoutGoods">
                 <ImageView
                     style="@style/MineImage"
