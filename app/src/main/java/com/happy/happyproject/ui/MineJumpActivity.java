@@ -7,12 +7,14 @@ import android.support.v4.app.FragmentTransaction;
 import android.widget.Toast;
 
 import com.happy.happyproject.R;
+import com.happy.happyproject.ui.fragments.CartFragment;
 import com.happy.happyproject.ui.fragments.LiuYanFragment;
 import com.happy.happyproject.ui.fragments.MineGoodsLikeFragment;
 import com.happy.happyproject.ui.fragments.MineMessFragment;
 import com.happy.happyproject.ui.fragments.MineOrderFragment;
 import com.happy.happyproject.ui.fragments.MineSpaceLikeFragment;
 import com.happy.happyproject.ui.fragments.ServiceFragment;
+import com.happy.happyproject.ui.fragments.SettingFragment;
 
 public class MineJumpActivity extends BaseActivity {
     private FragmentTransaction transaction;
@@ -65,6 +67,14 @@ public class MineJumpActivity extends BaseActivity {
             case "喜欢的商品":
                 MineGoodsLikeFragment goodFragment = new MineGoodsLikeFragment();
                 transaction.add(R.id.jump_frame, goodFragment);
+                break;
+            case "购物车":
+                CartFragment cartFragment = new CartFragment();
+                transaction.add(R.id.jump_frame, cartFragment);
+                break;
+            case "设置":
+                SettingFragment settingFragment = new SettingFragment();
+                transaction.add(R.id.jump_frame, settingFragment);
                 break;
         }
     }
