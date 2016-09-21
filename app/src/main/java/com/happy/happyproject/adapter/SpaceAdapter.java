@@ -32,7 +32,9 @@ public class SpaceAdapter extends RecyclerView.Adapter<SpaceAdapter.ViewHolder> 
     public void setListener(OnItemClickListener listener) {
         this.listener = listener;
     }
-
+    public Space getItem(int position){
+        return data.get(position);
+    }
     public SpaceAdapter(Context context, List<Space> data) {
         inflater=LayoutInflater.from(context);
         if (data!=null) {

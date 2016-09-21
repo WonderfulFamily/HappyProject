@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#282727"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/teach_cancel"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/btn_cancel"/>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="50dp"
+    android:columnCount="2"
+    tools:context="com.happy.happyproject.ui.view.SpaceFloatBtnActivity">
+
+
+    <ImageView
+        android:id="@+id/teach_dinner"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump"/>
+    <ImageView
+        android:id="@+id/teach_office"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump_bangong"/>
+    <ImageView
+        android:id="@+id/teach_art"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump_art"/>
+    <ImageView
+        android:id="@+id/teach_hotel"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump_hotel"/>
+    <ImageView
+        android:id="@+id/teach_life"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump_life"/>
+    <ImageView
+        android:id="@+id/teach_public"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump_public"/>
+    <ImageView
+        android:id="@+id/teach_retail"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump_life"/>
+    <ImageView
+        android:id="@+id/teach_other"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/space_floatbtn_jump_other"/>
+
+
+
+
+
+
+
+</GridLayout>
+</LinearLayout>
