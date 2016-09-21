@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="@dimen/smithy_item_width"
+              android:layout_height="@dimen/smithy_item_height"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/smithy_item_image"
+        android:layout_width="@dimen/item_iamge_wh"
+        android:layout_height="@dimen/item_iamge_wh"
+        android:src="@mipmap/mine_launcher"
+        android:layout_marginRight="@dimen/smithy_item_margin"/>
+    <View
+        android:layout_width="@dimen/item_diversion_width"
+        android:layout_height="@dimen/item_diversion_height"
+        android:background="@color/colorBlack"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/smithy_item_title"
+        android:layout_width="@dimen/item_title_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="器皿"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/smithy_item_margin"
+        android:textColor="@color/colorBlack"/>
+
+</LinearLayout>
