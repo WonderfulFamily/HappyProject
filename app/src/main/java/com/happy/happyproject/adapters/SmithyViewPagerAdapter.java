@@ -1,8 +1,9 @@
-package com.happy.happyproject.adapter;
+package com.happy.happyproject.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.util.Log;
 
 import java.util.List;
 
@@ -10,14 +11,16 @@ import java.util.List;
  * Created by Administrator on 2016/9/20 0020.
  */
 public class SmithyViewPagerAdapter extends FragmentPagerAdapter {
+    private static final String TAG = SmithyViewPagerAdapter.class.getSimpleName();
     private List<Fragment> data;
-    private String[] title={"独立设计","匠物精选"};
-    public SmithyViewPagerAdapter(FragmentManager fm,List<Fragment> data) {
+    private List<String> title;
+    public SmithyViewPagerAdapter(FragmentManager fm,List<Fragment> data,List<String> title) {
         super(fm);
         if (data!=null) {
             this.data = data;
         }
-
+        if (title!=null)
+            this.title = title;
     }
 
     @Override
@@ -30,9 +33,10 @@ public class SmithyViewPagerAdapter extends FragmentPagerAdapter {
         return data!=null?data.size():0;
     }
 
+
     @Override
     public CharSequence getPageTitle(int position) {
-
-        return title[position];
+        Log.e(TAG, "getPageTitle: " +title.get(position));
+        return title.get(position);
     }
 }

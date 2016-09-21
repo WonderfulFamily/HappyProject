@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/test_text"/>
-</LinearLayout>
+        android:text="最近做项目要求某种情况下ViewPager不能滑动，在网上找了一圈。有说重写Ontouch的，各种。都试了试，基本都不可用。
+
+自己看ViewPager源码，知道VIewPager移动全部都调用了scrollTo方法，这个是View的方法，那么我们只需要重写这个方法就可以禁止ViewPager滑动
+
+Java代码
+public class CustomViewPager extends ViewPager {
+
+    private boolean isCanScroll = true;
+
+    public CustomViewPager(Context context) {
+        super(context);
+    }
+
+    public CustomViewPager(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public void setScanScroll(boolean isCanScroll){
+        this.isCanScroll = isCanScroll;
+    }
+
+
+    @Override
+    public void scrollTo(int x, int y){
+        if (isCanScroll){
+            super.scrollTo(x, y);
+        }
+    }  "/>
+</android.support.v4.widget.NestedScrollView>

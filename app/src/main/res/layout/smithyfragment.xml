@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
@@ -11,32 +12,42 @@
         android:layout_height="@dimen/top_height"
         android:background="#00ffffff"
         app:elevation="0dp">
-    <com.qf.bannder.Banner
-        android:id="@+id/smithy_fragment_banner"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/top_scroll_height"
-        app:indicator_height="5dp"
-        app:indicator_width="5dp"
-        app:indicator_drawable_selected="@mipmap/dot_selected"
-        app:indicator_drawable_unselected="@mipmap/dot_unselected"
-        app:layout_scrollFlags="scroll|enterAlways"/>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/smithy_fragment_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_scrollFlags="scroll|enterAlways"/>
-        <android.support.design.widget.TabLayout
-            android:id="@+id/smithy_tablayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/tablayout_height"
-            app:layout_scrollFlags="scroll|enterAlways"/>
+            android:layout_height="@dimen/top_height"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+        <com.qf.bannder.Banner
+            android:id="@+id/smithy_fragment_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_scroll_height"
+            app:indicator_height="5dp"
+            app:indicator_width="5dp"
+            app:indicator_drawable_selected="@mipmap/dot_selected"
+            app:indicator_drawable_unselected="@mipmap/dot_unselected"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/smithy_fragment_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/smithy_recycler_height"/>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/smithy_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tablayout_height"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/colorBlack"
+                app:tabIndicatorHeight="@dimen/smithy_tablayout_ind_height"/>
+        </LinearLayout>
+
     </android.support.design.widget.AppBarLayout>
 
-
-    <android.support.v4.view.ViewPager
+    <com.happy.happyproject.ui.view.NoScrollViewPager
         android:id="@+id/smithy_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
 </android.support.design.widget.CoordinatorLayout>

@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -13,14 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.happy.happyproject.R;
-import com.happy.happyproject.adapter.SmithyViewPagerAdapter;
 import com.happy.happyproject.adapters.SmithyRecyclerAdapter;
+import com.happy.happyproject.adapters.SmithyViewPagerAdapter;
 import com.happy.happyproject.http.SmithyNavigationRequest;
 import com.happy.happyproject.http.SmithyTopRequest;
 import com.happy.happyproject.model.SmithyNavigation;
 import com.happy.happyproject.model.SmithyNavigationList;
 import com.happy.happyproject.model.SmithyTopView;
 import com.happy.happyproject.model.SmithyTopViewList;
+import com.happy.happyproject.ui.view.NoScrollViewPager;
 import com.qf.bannder.Banner;
 import com.qf.bannder.BannerConfig;
 
@@ -41,8 +41,10 @@ public class SmithyFragment extends BaseFragment {
     private RecyclerView mRecyclerView;
     private SmithyRecyclerAdapter mAdapter;
     private TabLayout mTabLayout;
-    private ViewPager mViewPager;
+    private NoScrollViewPager mViewPager;
     private List<Fragment> mFragmentList;
+    private List<String> title;
+    private SmithyViewPagerAdapter mViewPagerAdapter;
 
     @Nullable
     @Override
@@ -89,11 +91,15 @@ public class SmithyFragment extends BaseFragment {
 
     private void initViewPager() {
         mTabLayout = ((TabLayout) layout.findViewById(R.id.smithy_tablayout));
-        mViewPager = ((ViewPager) layout.findViewById(R.id.smithy_viewpager));
+        mViewPager = ((NoScrollViewPager) layout.findViewById(R.id.smithy_viewpager));
         mFragmentList = new ArrayList<>();
         mFragmentList.add(new SmithyDesignFragment());
         mFragmentList.add(new SmithySelectorFragment());
-        mViewPager.setAdapter(new SmithyViewPagerAdapter(getChildFragmentManager(),mFragmentList));
+        title = new ArrayList<>();
+        title.add("独立设计");
+        title.add("匠物精选");
+        mViewPagerAdapter = new SmithyViewPagerAdapter(getChildFragmentManager(),mFragmentList,title);
+        mViewPager.setAdapter(mViewPagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
     }
 
