@@ -117,4 +117,5 @@ public class MineFragment extends BaseFragment implements View.OnClickListener{
         Intent intent = new Intent(getActivity(), DesignerActivity.class);
         startActivity(intent);
     }
+
 }
