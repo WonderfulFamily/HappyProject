@@ -2,7 +2,7 @@ package com.happy.happyproject;
 
 import android.app.Application;
 
-import com.rock.teachlibrary.ImageLoader;
+
 
 import org.xutils.x;
 
@@ -16,6 +16,6 @@ public class Artsian extends Application {
         super.onCreate();
         x.Ext.init(this);
         x.Ext.setDebug(true);
-        ImageLoader.init(this);
+
     }
 }

@@ -9,16 +9,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
 import com.happy.happyproject.R;
-import com.happy.happyproject.adapter.SpaceListViewAdapter;
-import com.happy.happyproject.http.SpaceJumpRequest;
+import com.happy.happyproject.adapters.SpaceListViewAdapter;
 import com.happy.happyproject.model.SpaceJump;
 import com.happy.happyproject.model.SpaceJumpList;
 import com.happy.happyproject.model.SpaceJumpModel;
 import com.happy.happyproject.ui.view.SpaceFloatBtnActivity;
-import com.rock.teachlibrary.ImageLoader;
-import com.rock.teachlibrary.http.HttpUtil;
 
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;

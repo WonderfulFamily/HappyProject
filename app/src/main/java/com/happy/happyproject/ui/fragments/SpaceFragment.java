@@ -3,8 +3,6 @@ package com.happy.happyproject.ui.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.util.Pair;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -14,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.happy.happyproject.R;
-import com.happy.happyproject.adapter.SpaceAdapter;
+import com.happy.happyproject.adapters.SpaceAdapter;
 import com.happy.happyproject.http.SpaceRequest;
 import com.happy.happyproject.model.Space;
 import com.happy.happyproject.model.SpaceList;

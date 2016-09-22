@@ -1,1 +1,1 @@
-include ':app', ':bannder', ':teachlibrary'
+include ':app', ':bannder'

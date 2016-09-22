@@ -1,4 +1,4 @@
-package com.happy.happyproject.adapter;
+package com.happy.happyproject.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
