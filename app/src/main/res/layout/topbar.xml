@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+    android:background="#1a1818"
+    android:padding="12dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tobar_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="约设计"
+        android:textColor="#cec2c2"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/topbar_scan"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/scan"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/topbar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空间"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@+id/topbar_scan"
+        android:layout_marginRight="130dp"/>
+</RelativeLayout>
