@@ -1,5 +1,6 @@
-package com.happy.happyproject.ui.view;
+package com.happy.happyproject.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -56,31 +57,31 @@ public class SpaceFloatBtnActivity extends BaseActivity implements View.OnClickL
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.teach_other:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+               startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_retail:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_public:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_life:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_hotel:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_art:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_office:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_dinner:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
             case R.id.teach_cancel:
-                Toast.makeText(this,"点击了",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SpaceJumpSquareActivity.class));
                 break;
         }
     }

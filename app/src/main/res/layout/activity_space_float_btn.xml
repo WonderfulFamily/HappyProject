@@ -20,7 +20,7 @@
     android:layout_marginLeft="100dp"
     android:layout_marginTop="50dp"
     android:columnCount="2"
-    tools:context="com.happy.happyproject.ui.view.SpaceFloatBtnActivity">
+    tools:context=".ui.SpaceFloatBtnActivity">
 
 
     <ImageView

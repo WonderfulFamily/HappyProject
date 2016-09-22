@@ -8,13 +8,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.happy.happyproject.R;
 import com.happy.happyproject.adapters.SpaceListViewAdapter;
 import com.happy.happyproject.model.SpaceJump;
 import com.happy.happyproject.model.SpaceJumpList;
 import com.happy.happyproject.model.SpaceJumpModel;
-import com.happy.happyproject.ui.view.SpaceFloatBtnActivity;
 
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;
@@ -113,7 +113,8 @@ public class SpaceJumpActivity extends BaseActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.space_float_btn:
-                startActivity(new Intent(this,SpaceFloatBtnActivity.class));
+                Intent intent = new Intent(this, SpaceFloatBtnActivity.class);
+                startActivity(intent);
                 break;
 
         }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2b2b"
+    android:orientation="vertical"
+    tools:context="com.happy.happyproject.ui.SpaceJumpSquareActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="单位: 平米"
+    android:gravity="center"
+    android:textSize="24sp"
+    android:textColor="#fdf7f7"
+    android:layout_marginTop="90dp"/>
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="0-99"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn"
+        android:textSize="18sp"
+        android:textColor="#fdf7f7"
+        android:layout_marginTop="45dp"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="100-299"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="#fdf7f7"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="300-999"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn"
+        android:textSize="18sp"
+        android:textColor="#fdf7f7"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="1000-0"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn"
+        android:textSize="18sp"
+        android:textColor="#fdf7f7"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+</LinearLayout>
