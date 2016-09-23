@@ -2,6 +2,7 @@ package com.happy.happyproject.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import com.happy.happyproject.R;
 public class SmithyDesignFragment extends BaseFragment {
 
     private static final String TAG = SmithyDesignFragment.class.getSimpleName();
+    private RecyclerView mRecyclerView;
 
     @Nullable
     @Override
@@ -22,4 +24,14 @@ public class SmithyDesignFragment extends BaseFragment {
         return  layout;
     }
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        initView();
+    }
+
+    private void initView() {
+        mRecyclerView = (RecyclerView)layout.findViewById(R.id.smithy_fragment_recycler);
+
+    }
 }

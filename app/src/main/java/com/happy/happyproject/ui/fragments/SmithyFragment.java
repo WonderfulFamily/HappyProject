@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -20,7 +21,6 @@ import com.happy.happyproject.model.SmithyNavigation;
 import com.happy.happyproject.model.SmithyNavigationList;
 import com.happy.happyproject.model.SmithyTopView;
 import com.happy.happyproject.model.SmithyTopViewList;
-import com.happy.happyproject.ui.view.NoScrollViewPager;
 import com.qf.bannder.Banner;
 import com.qf.bannder.BannerConfig;
 
@@ -41,7 +41,7 @@ public class SmithyFragment extends BaseFragment {
     private RecyclerView mRecyclerView;
     private SmithyRecyclerAdapter mAdapter;
     private TabLayout mTabLayout;
-    private NoScrollViewPager mViewPager;
+    private ViewPager mViewPager;
     private List<Fragment> mFragmentList;
     private List<String> title;
     private SmithyViewPagerAdapter mViewPagerAdapter;
@@ -91,7 +91,7 @@ public class SmithyFragment extends BaseFragment {
 
     private void initViewPager() {
         mTabLayout = ((TabLayout) layout.findViewById(R.id.smithy_tablayout));
-        mViewPager = ((NoScrollViewPager) layout.findViewById(R.id.smithy_viewpager));
+        mViewPager = ((ViewPager) layout.findViewById(R.id.smithy_viewpager));
         mFragmentList = new ArrayList<>();
         mFragmentList.add(new SmithyDesignFragment());
         mFragmentList.add(new SmithySelectorFragment());
@@ -101,6 +101,7 @@ public class SmithyFragment extends BaseFragment {
         mViewPagerAdapter = new SmithyViewPagerAdapter(getChildFragmentManager(),mFragmentList,title);
         mViewPager.setAdapter(mViewPagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
+
     }
 
 
