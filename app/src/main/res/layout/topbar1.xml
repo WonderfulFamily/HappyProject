@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="#000"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/currency_bar_left_black_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/jc_back"
+        />
+
+    <ImageView
+        android:src="@mipmap/btn_cancel"
+       android:layout_alignParentRight="true"
+        android:id="@+id/teach_cancel_topbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

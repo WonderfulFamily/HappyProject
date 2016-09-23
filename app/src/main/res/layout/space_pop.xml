@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:background="#88aca9a9"
+
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+   <TextView
+       android:background="#fff"
+       android:layout_width="220dp"
+       android:layout_height="80dp"
+       android:gravity="center"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:text="确定放弃编辑吗"/>
+    <View
+        android:background="#696969"
+        android:layout_width="220dp"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="220dp"
+        android:layout_height="50dp">
+
+    <Button
+        android:id="@+id/space_cancel"
+        android:background="#fff"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:text="取消"/>
+     <View
+         android:background="#696969"
+         android:layout_width="1dp"
+         android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/space_sure"
+            android:background="#fff"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="确定"/>
+    </LinearLayout>
+
+</LinearLayout>

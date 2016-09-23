@@ -95,13 +95,7 @@ public class SpaceFragment extends BaseFragment implements SpaceAdapter.OnItemCl
                 intent.putExtra("url",adapter.getItem(position).getThumb());
                 intent.putExtra("id",adapter.getItem(position).getId());
                 intent.putExtra("name",adapter.getItem(position).getName());
-//
-////                image = (ImageView) v.findViewById(R.id.space_recyclerview_image);
-////                Pair pair = new Pair(image,"teach");  ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(),pair);
-//
-//                Log.e(TAG, "onItemClick: ==========================url"+adapter.getItem(position).getThumb());
-//                Log.e(TAG, "onItemClick: ======id"+adapter.getItem(position).getId() );
-////                intent.putExtra("thumb",url);
+
                 startActivity(intent);
                 break;
         }

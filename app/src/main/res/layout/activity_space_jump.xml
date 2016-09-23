@@ -60,6 +60,7 @@
         app:layout_behavior="com.happy.happyproject.ui.view.BottomBehavior"
         android:orientation="horizontal">
         <LinearLayout
+            android:id="@+id/space_speak"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="0dp"
@@ -78,6 +79,7 @@
                 android:text="你好"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/space_heart_space"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="0dp"
@@ -96,6 +98,7 @@
                 android:text="你好"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/space_share_message"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="0dp"

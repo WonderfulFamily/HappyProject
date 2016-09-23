@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.happy.happyproject.R;
 import com.happy.happyproject.ui.SpaceFloatBtnActivity;
+import com.rock.qrcodelibrary.CaptureActivity;
 
 public class TopBar extends RelativeLayout implements View.OnClickListener {
     private static final String TAG = TopBar.class.getSimpleName();
@@ -55,7 +56,11 @@ public class TopBar extends RelativeLayout implements View.OnClickListener {
 //                Toast.makeText(getContext(), "此功能暂时没有开放", Toast.LENGTH_SHORT).show();
 //                break;
             case R.id.topbar_scan:
-                Toast.makeText(getContext(), "此功能暂时没有开放", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "此功能暂时没有开放", Toast.LENGTH_SHORT).show();
+                // 启动扫描页面
+                Intent intent1 = new Intent(getContext(), CaptureActivity.class);
+//                getContext().startActivityForResult(intent,QR_REQUEST_CODE);
+                getContext().startActivity(intent1 );
                 break;
             case R.id.tobar_image:
                 Intent intent = new Intent(getContext(), SpaceFloatBtnActivity.class);

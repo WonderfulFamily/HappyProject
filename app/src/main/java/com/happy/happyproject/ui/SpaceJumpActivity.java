@@ -6,21 +6,19 @@ import android.support.design.widget.FloatingActionButton;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.happy.happyproject.R;
 import com.happy.happyproject.adapters.SpaceListViewAdapter;
 import com.happy.happyproject.model.SpaceJump;
 import com.happy.happyproject.model.SpaceJumpList;
 import com.happy.happyproject.model.SpaceJumpModel;
-
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;
 import org.xutils.x;
 import java.util.List;
-
 
 public class SpaceJumpActivity extends BaseActivity implements View.OnClickListener {
 
@@ -31,13 +29,16 @@ public class SpaceJumpActivity extends BaseActivity implements View.OnClickListe
     private SpaceListViewAdapter adapter;
     private SpaceJumpList space;
     private String url;
-   private String id;
+    private String id;
     private String name;
     private TextView mNameTitle;
     private TextView mSpeak;
     private TextView mHeartNum;
     private TextView mShareNum;
     private FloatingActionButton mFloatBtn;
+    private LinearLayout mShare;
+    private LinearLayout mHeart;
+    private LinearLayout mTalk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +73,12 @@ public class SpaceJumpActivity extends BaseActivity implements View.OnClickListe
         mShareNum = (TextView) findViewById(R.id.space_shared_num);
         mFloatBtn = (FloatingActionButton) findViewById(R.id.space_float_btn);
         mFloatBtn.setOnClickListener(this);
+        mShare = (LinearLayout) findViewById(R.id.space_share_message);
+        mHeart = (LinearLayout) findViewById(R.id.space_heart_space);
+        mTalk = (LinearLayout) findViewById(R.id.space_speak);
+        mTalk.setOnClickListener(this);
+        mShare.setOnClickListener(this);
+        mHeart.setOnClickListener(this);
 
     }
     private void setupView() {
@@ -115,6 +122,15 @@ public class SpaceJumpActivity extends BaseActivity implements View.OnClickListe
             case R.id.space_float_btn:
                 Intent intent = new Intent(this, SpaceFloatBtnActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.space_share_message:
+                Toast.makeText(SpaceJumpActivity.this, "点击了", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.space_heart_space:
+                Toast.makeText(SpaceJumpActivity.this, "点击了", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.space_speak:
+                Toast.makeText(SpaceJumpActivity.this, "点击了", Toast.LENGTH_SHORT).show();
                 break;
 
         }
