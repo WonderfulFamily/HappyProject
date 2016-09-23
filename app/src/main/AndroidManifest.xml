@@ -69,7 +69,8 @@
         <activity android:name=".ui.MineJumpActivity" />
         <activity android:name=".ui.SpaceJumpActivity" />
         <activity android:name=".ui.SpaceFloatBtnActivity" />
-        <activity android:name=".ui.SpaceJumpSquareActivity"></activity>
+        <activity android:name=".ui.SpaceJumpSquareActivity" />
+        <activity android:name=".ui.SmithyShoppingCartActivity"></activity>
     </application>
 
 </manifest>

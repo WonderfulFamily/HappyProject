@@ -7,11 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-
+import android.widget.Toast;
 import com.happy.happyproject.R;
-import com.happy.happyproject.ui.SpaceFloatBtnActivity;
-import com.rock.qrcodelibrary.CaptureActivity;
+import com.happy.happyproject.ui.SmithyShoppingCartActivity;
 
 public class TopBarSmithy extends RelativeLayout implements View.OnClickListener {
     private static final String TAG = TopBarSmithy.class.getSimpleName();
@@ -38,8 +36,8 @@ public class TopBarSmithy extends RelativeLayout implements View.OnClickListener
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.topbar_smithy, this,true);
 
-        mShoppingCart = ((ImageView) view.findViewById(R.id.tobar_shopping_cart));
-        mSearch = ((ImageView) view.findViewById(R.id.topbar_search));
+        mShoppingCart = ((ImageView) view.findViewById(R.id.topar_shopping_cart));
+        mSearch = ((ImageView) view.findViewById(R.id.topbar_search_home));
         mShoppingCart.setOnClickListener(this);
         mSearch.setOnClickListener(this);
 
@@ -49,20 +47,15 @@ public class TopBarSmithy extends RelativeLayout implements View.OnClickListener
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-//            case R.id.mShoppingCart:
-//                Log.e(TAG, "onClick: search" );
-//                Toast.makeText(getContext(), "此功能暂时没有开放", Toast.LENGTH_SHORT).show();
-//                break;
-            case R.id.tobar_shopping_cart:
-                //Toast.makeText(getContext(), "此功能暂时没有开放", Toast.LENGTH_SHORT).show();
-                // 启动扫描页面
-//                Intent intent1 = new Intent(getContext(), CaptureActivity.class);
-////                getContext().startActivityForResult(intent,QR_REQUEST_CODE);
-//                getContext().startActivity(intent1 );
+
+            case R.id.topar_shopping_cart:
+
+                Intent intent = new Intent(getContext(),SmithyShoppingCartActivity.class);
+                getContext().startActivity(intent);
                 break;
             case R.id.topbar_search:
-//                Intent intent = new Intent(getContext(), SpaceFloatBtnActivity.class);
-//                getContext().startActivity(intent);
+                Toast.makeText(getContext(), "此功能暂时没有开放", Toast.LENGTH_SHORT).show();
+
                 break;
         }
     }
